@@ -9237,6 +9237,9 @@ section[data-hero-type] {
 
 /* ========== END GRID RESPONSIVE FIX ========== */
 
+/* Footer contact alignment fix */
+.footer-contact li > a { display: flex; align-items: flex-start; gap: inherit; }
+
 
 /* ZAPPY_SECTION_BG_TYPE_FIX */
 [data-zappy-bg-type="color"] { background-image: none !important; background-color: var(--zappy-bg-color, transparent) !important; }
