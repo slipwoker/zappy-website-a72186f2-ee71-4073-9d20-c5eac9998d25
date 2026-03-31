@@ -8636,45 +8636,44 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
-.navbar .nav-cta-container .lang-switcher {
-  display: flex !important;
+.nav-menu .nav-menu-lang-item {
+  display: none;
 }
 
 @media (max-width: 768px) {
-.navbar .nav-cta-container .lang-switcher {
-  display: none !important;
+.nav-menu .nav-menu-lang-item {
+  display: flex !important;
+  justify-content: center;
+  padding: 12px 20px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  margin-top: 6px;
+  list-style: none;
 }
 
-.nav-menu .lang-switcher {
+.nav-menu .nav-menu-lang-item .lang-switcher {
   display: flex !important;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-  padding: 14px 20px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  margin-top: 8px;
 }
 
-.nav-menu .lang-btn {
+.nav-menu .nav-menu-lang-item .lang-btn {
   background: none;
   border: none;
   color: var(--nav-text, #F5F7FA);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  opacity: 0.65;
-  transition: opacity 0.2s;
-  padding: 4px 6px;
+  opacity: 0.6;
+  padding: 4px 8px;
 }
 
-.nav-menu .lang-btn.active {
+.nav-menu .nav-menu-lang-item .lang-btn.active {
   opacity: 1;
   color: var(--nav-text-hover, #00D4FF);
 }
 
-.nav-menu .lang-divider {
+.nav-menu .nav-menu-lang-item .lang-divider {
   color: rgba(255,255,255,0.3);
-  font-size: 0.85rem;
 }
 }
 
