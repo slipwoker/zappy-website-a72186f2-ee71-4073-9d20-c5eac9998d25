@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ageyevvladimir.zappy5.app/sitemap.xml
+Sitemap: https://vladimir-ageyev.com/sitemap.xml

@@ -1,66 +1,47 @@
-# אגייב ולדימיר — Generative Engine Optimization Map
-
-> A psychotherapist specializing in short-term, evidence-based therapeutic methods including EMDR (Eye Movement Desensitization and Reprocessing), IFS (Internal Family Systems), and IMTT (Integrated Memory Transformation Therapy). The practice focuses on efficient, targeted healing approaches that aim to produce meaningful results in fewer sessions than traditional therapy. The brand identity centers around professional expertise, innovation in mental health treatment, and a commitment to modern, effective healing modalities.
+# Business — Generative Engine Optimization Map
 
 ---
 
 ## Pages
 
 ### בית
-https://ageyevvladimir.zappy5.app
+https://vladimir-ageyev.com
 פסיכותרפיסט EMDR בישראל המתמחה בשיטות מבוססות ראיות כמו IFS ו-EMDR. טיפול קצר מועד שמביא תוצאות אמיתיות במספר מינימלי של פגישות. גלה את הדרך לריפוי אמיתי.
 
 ### שיטות
-https://ageyevvladimir.zappy5.app/methods
+https://vladimir-ageyev.com/methods
 גלה את שיטות הטיפול החדשניות ביותר: EMDR, IFS ו-IMTT. כל שיטה מותאמת אישית לצרכיך ומיועדת לייצר שינוי עמוק ומהיר. בחר בגישה שתעבוד עבורך.
 
 ### אודות
-https://ageyevvladimir.zappy5.app/about
+https://vladimir-ageyev.com/about
 ולדימיר אגייב הוא פסיכותרפיסט מוסמך עם התמחות ייחודית בשיטות מבוססות ראיות. גישה אישית, מקצועית וחדשנית לבריאות הנפש שלך. גלה מה מייחד את הטיפול שלו.
 
 ### צור קשר
-https://ageyevvladimir.zappy5.app/contact
+https://vladimir-ageyev.com/contact
 מוכן להתחיל את מסע הריפוי שלך? צור קשר עם פסיכותרפיסט EMDR בישראל ולדימיר אגייב עוד היום. קבע פגישת היכרות ותתחיל לחוות שינוי אמיתי בחייך.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://ageyevvladimir.zappy5.app/privacy
+https://vladimir-ageyev.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://ageyevvladimir.zappy5.app/terms
+https://vladimir-ageyev.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://ageyevvladimir.zappy5.app/accessibility
+https://vladimir-ageyev.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About אגייב ולדימיר
-A psychotherapist specializing in short-term, evidence-based therapeutic methods including EMDR (Eye Movement Desensitization and Reprocessing), IFS (Internal Family Systems), and IMTT (Integrated Memory Transformation Therapy). The practice focuses on efficient, targeted healing approaches that aim to produce meaningful results in fewer sessions than traditional therapy. The brand identity centers around professional expertise, innovation in mental health treatment, and a commitment to modern, effective healing modalities.
-
-## Services/Products
-- EMDR
-- IFS
-- IMTT
-
-## Target Audience
-- מקצוענים לחוצים
-- הורים טריים
-- סטודנטים במכללות
-- קהילת גולים
-- גרושים טריים
-
-## Industry
-בריאות נפש וטיפול פסיכולוגי
-
+## About Business
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://ageyevvladimir.zappy5.app/sitemap.xml
-- **Robots.txt**: https://ageyevvladimir.zappy5.app/robots.txt
+- **Sitemap**: https://vladimir-ageyev.com/sitemap.xml
+- **Robots.txt**: https://vladimir-ageyev.com/robots.txt
