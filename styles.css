@@ -8636,42 +8636,48 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
-.navbar .nav-menu .mobile-lang-switcher {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 16px 0 8px 0;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  margin-top: 8px;
-}
-
-.navbar .nav-menu.active .mobile-lang-switcher {
+.navbar #navMenu.active li.mobile-lang-switcher {
   display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  list-style: none !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 14px 0 6px 0 !important;
+  margin-top: 6px !important;
+  border-top: 1px solid rgba(255,255,255,0.12) !important;
+  width: 100% !important;
 }
 
-.navbar .nav-menu .mobile-lang-switcher .lang-btn {
-  background: none !important;
+.navbar #navMenu li.mobile-lang-switcher {
+  display: none;
+}
+
+.navbar #navMenu.active li.mobile-lang-switcher .lang-btn {
+  display: inline-flex !important;
+  visibility: visible !important;
+  background: rgba(255,255,255,0.06) !important;
   border: 1px solid rgba(255,255,255,0.25) !important;
-  border-radius: 4px !important;
-  color: var(--nav-text, #F5F7FA) !important;
-  font-size: 0.85rem !important;
+  border-radius: 5px !important;
+  color: #F5F7FA !important;
+  font-size: 0.82rem !important;
   font-weight: 600 !important;
   padding: 6px 14px !important;
   cursor: pointer !important;
-  transition: all 0.2s ease !important;
-  outline: none !important;
+  letter-spacing: 0.04em !important;
 }
 
-.navbar .nav-menu .mobile-lang-switcher .lang-btn.active {
-  background: rgba(20,199,247,0.18) !important;
+.navbar #navMenu.active li.mobile-lang-switcher .lang-btn.active {
+  background: rgba(20,199,247,0.2) !important;
   border-color: #14C7F7 !important;
   color: #14C7F7 !important;
 }
 
-.navbar .nav-menu .mobile-lang-switcher .lang-divider {
-  color: rgba(255,255,255,0.3);
-  font-size: 0.85rem;
+.navbar #navMenu.active li.mobile-lang-switcher .lang-divider {
+  display: inline !important;
+  color: rgba(255,255,255,0.25) !important;
+  font-size: 0.85rem !important;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
