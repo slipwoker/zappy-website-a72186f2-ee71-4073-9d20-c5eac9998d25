@@ -8636,12 +8636,20 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
-.navbar .lang-switcher .lang-btn {
-  color: var(--nav-text-hover) !important;
+@media (max-width: 768px) {
+.navbar .lang-switcher,
+  .nav-cta-container .lang-switcher,
+  .nav-container .lang-switcher,
+  .navbar .nav-cta-container .lang-switcher {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 1001 !important;
 }
-
-.navbar .lang-switcher .lang-divider {
-  color: var(--nav-text-hover) !important;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
