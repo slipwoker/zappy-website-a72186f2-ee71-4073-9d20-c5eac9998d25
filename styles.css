@@ -8637,17 +8637,11 @@ body.accessibility-widget-visible ._access-menu {
 }
 
 .navbar .nav-cta-btn {
-  background: rgba(255, 255, 255, 0.92) !important;
-  color: var(--text-color) !important;
-  border: 1px solid rgba(0,0,0,0.12) !important;
-  border-radius: 6px !important;
-  font-weight: 600 !important;
-  box-shadow: none !important;
-}
-
-.navbar .nav-cta-btn:hover {
-  background: rgba(255, 255, 255, 1) !important;
-  color: var(--text-color) !important;
+  background: revert !important;
+  color: revert !important;
+  border: revert !important;
+  border-radius: revert !important;
+  box-shadow: revert !important;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
