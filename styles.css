@@ -8636,12 +8636,12 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
-.navbar .nav-cta-btn {
-  background: revert !important;
-  color: revert !important;
-  border: revert !important;
-  border-radius: revert !important;
-  box-shadow: revert !important;
+.navbar .lang-switcher .lang-btn {
+  color: var(--nav-text-hover) !important;
+}
+
+.navbar .lang-switcher .lang-divider {
+  color: var(--nav-text-hover) !important;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
