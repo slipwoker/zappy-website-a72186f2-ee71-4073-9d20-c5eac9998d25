@@ -652,10 +652,55 @@
     
 
     <div class="nav-cta-container">
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-btn active" data-lang="he" onclick="switchLang('he')">עב</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="ru" onclick="switchLang('ru')">РУ</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en" onclick="switchLang('en')">EN</button>
+      </div>
       <a href="/contact" class="nav-cta-btn">צור קשר</a>
     </div>
   </div>
 </nav>
+<div id="google_translate_element" style="display:none;"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'he',
+    includedLanguages: 'he,ru,en',
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+function switchLang(lang) {
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+  if (lang === 'he') {
+    var frame = document.querySelector('.goog-te-banner-frame');
+    if (frame) frame.style.display = 'none';
+    var restore = document.querySelector('.goog-te-banner-frame');
+    var select = document.querySelector('.goog-te-combo');
+    if (select) {
+      select.value = '';
+      select.dispatchEvent(new Event('change'));
+    }
+    setTimeout(function() {
+      var restoreBtn = document.querySelector('.goog-te-banner-frame');
+      if (restoreBtn) restoreBtn.style.display = 'none';
+      document.body.style.top = '';
+      document.documentElement.style.top = '';
+    }, 500);
+    return;
+  }
+  var select = document.querySelector('.goog-te-combo');
+  if (select) {
+    select.value = lang;
+    select.dispatchEvent(new Event('change'));
+  }
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script>
 
 // Navbar Mobile Menu Toggle and Contrast Fix
