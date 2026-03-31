@@ -8636,51 +8636,42 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
-.navbar .lang-switcher .lang-btn {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 3px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  transition: all 0.22s ease;
-}
-
-.navbar .lang-switcher .lang-btn[data-lang="he"] {
-  background-color: var(--primary-color) !important;
-  color: var(--surface-color) !important;
-}
-
-.navbar .lang-switcher .lang-btn[data-lang="ru"] {
-  background-color: var(--secondary-color) !important;
-  color: var(--surface-color) !important;
-}
-
-.navbar .lang-switcher .lang-btn[data-lang="en"] {
-  background-color: var(--accent-color) !important;
-  color: var(--surface-color) !important;
-}
-
-.navbar .lang-switcher .lang-btn.active {
-  outline: 2px solid var(--surface-color) !important;
-}
-
-.navbar .lang-switcher .lang-btn:hover {
-  opacity: 0.82;
-  transform: translateY(-1px);
-}
-
-.navbar .lang-switcher .lang-divider {
-  display: none !important;
-}
-
-.navbar .lang-switcher {
-  display: flex;
+.navbar .nav-menu .mobile-lang-switcher {
+  display: none;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 0 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 8px;
+}
+
+.navbar .nav-menu.active .mobile-lang-switcher {
+  display: flex !important;
+}
+
+.navbar .nav-menu .mobile-lang-switcher .lang-btn {
+  background: none !important;
+  border: 1px solid rgba(255,255,255,0.25) !important;
+  border-radius: 4px !important;
+  color: var(--nav-text, #F5F7FA) !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  padding: 6px 14px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  outline: none !important;
+}
+
+.navbar .nav-menu .mobile-lang-switcher .lang-btn.active {
+  background: rgba(20,199,247,0.18) !important;
+  border-color: #14C7F7 !important;
+  color: #14C7F7 !important;
+}
+
+.navbar .nav-menu .mobile-lang-switcher .lang-divider {
+  color: rgba(255,255,255,0.3);
+  font-size: 0.85rem;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
