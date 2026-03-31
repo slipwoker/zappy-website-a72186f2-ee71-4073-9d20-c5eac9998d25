@@ -8636,10 +8636,24 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
-@media (min-width: 769px) {
-.navbar .nav-menu li.mobile-lang-item {
-  display: none !important;
+.navbar .lang-switcher {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
 }
+
+.navbar .lang-switcher .lang-btn {
+  color: var(--text-color) !important;
+  font-weight: 600 !important;
+}
+
+.navbar .lang-switcher .lang-btn.active {
+  color: var(--primary) !important;
+}
+
+.navbar .lang-switcher .lang-divider {
+  color: #9AA4B2 !important;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
