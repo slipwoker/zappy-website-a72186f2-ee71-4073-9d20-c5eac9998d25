@@ -8637,38 +8637,18 @@ body.accessibility-widget-visible ._access-menu {
 }
 
 @media (max-width: 768px) {
-.nav-menu .nav-menu-lang-item {
+.navbar .nav-cta-container:has(.lang-switcher-standalone) {
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
-  padding: 10px 0 !important;
-}
-
-.nav-menu .nav-menu-lang-item .lang-switcher--in-menu {
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-}
-
-.nav-menu .nav-menu-lang-item .lang-btn {
-  display: inline-flex !important;
-  color: var(--nav-text) !important;
-  font-size: 0.9rem !important;
-  font-weight: 600 !important;
+  box-shadow: none !important;
   background: none !important;
-  border: none !important;
-  cursor: pointer !important;
-  padding: 4px 6px !important;
-}
-
-.nav-menu .nav-menu-lang-item .lang-btn.active {
-  color: var(--nav-text-hover) !important;
-}
-
-.nav-menu .nav-menu-lang-item .lang-divider {
-  display: inline !important;
-  color: var(--nav-text) !important;
-  opacity: 0.5 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  left: 56px !important;
+  right: auto !important;
+  z-index: 1002 !important;
 }
 }
 
