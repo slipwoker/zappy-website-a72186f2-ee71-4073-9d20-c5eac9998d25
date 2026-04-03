@@ -8639,11 +8639,23 @@ body.accessibility-widget-visible ._access-menu {
 #ai-section-1774717189057-1qtzq4e .zappy-auto-grid {
   grid-template-columns: 1fr !important;
   gap: 24px !important;
+  padding: 0 !important;
+  max-width: 860px !important;
+  width: 100% !important;
 }
 
 #ai-section-1774717189057-1qtzq4e .zappy-grid-item {
   width: 100% !important;
-  max-width: 800px !important;
+  max-width: 100% !important;
+  padding: 28px 32px !important;
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+#ai-section-1774717189057-1qtzq4e .zappy-grid-item * {
+  overflow: visible !important;
+  white-space: normal !important;
+  max-width: 100% !important;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
