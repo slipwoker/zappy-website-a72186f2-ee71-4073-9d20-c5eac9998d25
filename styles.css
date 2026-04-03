@@ -8636,14 +8636,14 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
-.navbar .phone-header-btn {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  width: 0 !important;
-  height: 0 !important;
-  overflow: hidden !important;
-  position: absolute !important;
+#ai-section-1774717189057-1qtzq4e .zappy-auto-grid {
+  grid-template-columns: 1fr !important;
+  gap: 24px !important;
+}
+
+#ai-section-1774717189057-1qtzq4e .zappy-grid-item {
+  width: 100% !important;
+  max-width: 800px !important;
 }
 
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
