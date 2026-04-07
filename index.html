@@ -561,8 +561,8 @@
       .sub-menu a:hover { background-color: #f5f5f5; }
       /* RTL (Hebrew/Arabic) dropdown positioning */
       [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
-      /* Hide empty dropdown menus */
-      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Hide empty dropdown menus (exclude catalog sub-menus that use <a> children instead of <li>) */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))):not(:has(> a)), .sub-menu:not(:has(li)):not(:has(> a)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
       /* Desktop: show submenu on Menu Group hover */
       li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
       /* Menu Group title styling */
@@ -571,7 +571,7 @@
       /* ========== MOBILE SUBMENU STYLES ========== */
       @media (max-width: 768px) {
         .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
-        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        .sub-menu.mobile-expanded { max-height: 60vh !important; overflow-y: auto !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
         [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
         /* Disable hover behavior on mobile */
         .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
@@ -1307,7 +1307,7 @@ function switchLang(lang) {
     <header class="addict-header">
       
       <h2 class="addict-title" id="addict-main-title" style="text-align: center;">&nbsp; תחומי טיפול מתמחים</h2>
-      <p class="addict-subtitle" >&nbsp; &nbsp;עבודה ממוקדת עם מגוון סוגי תמכרות,&nbsp;<br>&nbsp; שורש הבעיה הרגשית — לא רק הסימפטום</p>
+      <p class="addict-subtitle" style="text-align: center;">&nbsp; &nbsp;עבודה ממוקדת עם מגוון סוגי תמכרות,&nbsp;<br>&nbsp; שורש הבעיה הרגשית — לא רק הסימפטום</p>
       <div class="addict-divider" aria-hidden="true"></div>
     </header>
 
@@ -1315,9 +1315,9 @@ function switchLang(lang) {
     <div class="addict-grid" role="list">
 
       <!-- 1: אלכוהול -->
-      <article class="addict-card addict-card--cyan" role="listitem" tabindex="0" aria-label="אלכוהול — התמכרות לאלכוהול וצריכה כפייתית" data-grid-item-index="0">
+      <article class="addict-card addict-card--cyan" role="listitem" tabindex="0" aria-label="אלכוהול — התמכרות לאלכוהול וצריכה כפייתית" data-grid-item-index="0" style="text-align: center;">
         <div class="addict-card__glow" aria-hidden="true"></div>
-        <div class="addict-card__icon-wrap" aria-hidden="true">
+        <div class="addict-card__icon-wrap" aria-hidden="true" >
           <span class="addict-card__icon" >&nbsp; 🍷</span>
         </div>
         <h3 class="addict-card__title" >&nbsp; אלכוהול</h3>
@@ -1326,9 +1326,9 @@ function switchLang(lang) {
       </article>
 
       <!-- 2: הימורים -->
-      <article class="addict-card addict-card--purple" role="listitem" tabindex="0" aria-label="הימורים — התמכרות להימורים וסיכון כפייתי" data-grid-item-index="1">
+      <article class="addict-card addict-card--purple" role="listitem" tabindex="0" aria-label="הימורים — התמכרות להימורים וסיכון כפייתי" data-grid-item-index="1" style="text-align: center;">
         <div class="addict-card__glow" aria-hidden="true"></div>
-        <div class="addict-card__icon-wrap" aria-hidden="true">
+        <div class="addict-card__icon-wrap" aria-hidden="true" >
           <span class="addict-card__icon" >&nbsp; 🎰</span>
         </div>
         <h3 class="addict-card__title" >&nbsp; הימורים</h3>
@@ -1337,9 +1337,9 @@ function switchLang(lang) {
       </article>
 
       <!-- 3: פורנו -->
-      <article class="addict-card addict-card--gold" role="listitem" tabindex="0" aria-label="פורנו — התמכרות לתוכן מיני ברשת" data-grid-item-index="2">
+      <article class="addict-card addict-card--gold" role="listitem" tabindex="0" aria-label="פורנו — התמכרות לתוכן מיני ברשת" data-grid-item-index="2" style="text-align: center;">
         <div class="addict-card__glow" aria-hidden="true"></div>
-        <div class="addict-card__icon-wrap" aria-hidden="true">
+        <div class="addict-card__icon-wrap" aria-hidden="true" >
           <span class="addict-card__icon" >&nbsp; 🔒</span>
         </div>
         <h3 class="addict-card__title" >&nbsp; פורנו</h3>
@@ -1348,9 +1348,9 @@ function switchLang(lang) {
       </article>
 
       <!-- 4: שופינג -->
-      <article class="addict-card addict-card--cyan" role="listitem" tabindex="0" aria-label="שופינג — קניות כפייתיות ובזבוז לא נשלט" data-grid-item-index="3">
+      <article class="addict-card addict-card--cyan" role="listitem" tabindex="0" aria-label="שופינג — קניות כפייתיות ובזבוז לא נשלט" data-grid-item-index="3" style="text-align: center;">
         <div class="addict-card__glow" aria-hidden="true"></div>
-        <div class="addict-card__icon-wrap" aria-hidden="true">
+        <div class="addict-card__icon-wrap" aria-hidden="true" >
           <span class="addict-card__icon" >&nbsp; 🛍️</span>
         </div>
         <h3 class="addict-card__title" >&nbsp; שופינג</h3>
@@ -1359,9 +1359,9 @@ function switchLang(lang) {
       </article>
 
       <!-- 5: עישון -->
-      <article class="addict-card addict-card--purple" role="listitem" tabindex="0" aria-label="עישון — תלות בניקוטין ורצון להפסיק" style="display: flex !important; flex-direction: column !important; justify-content: flex-end !important; align-items: stretch !important; align-self: stretch !important; height: 100% !important;" data-grid-item-index="4">
+      <article class="addict-card addict-card--purple" role="listitem" tabindex="0" aria-label="עישון — תלות בניקוטין ורצון להפסיק" style="display: flex !important; flex-direction: column !important; justify-content: center; align-items: stretch !important; align-self: stretch !important; height: 100% !important; width: 100%; text-align: center;" data-grid-item-index="4">
         <div class="addict-card__glow" aria-hidden="true"></div>
-        <div class="addict-card__icon-wrap" aria-hidden="true">
+        <div class="addict-card__icon-wrap" aria-hidden="true" >
           <span class="addict-card__icon" >&nbsp; 🚬</span>
         </div>
         <h3 class="addict-card__title" >&nbsp; עישון</h3>
@@ -1370,9 +1370,9 @@ function switchLang(lang) {
       </article>
 
       <!-- 6: סמים -->
-      <article class="addict-card addict-card--gold" role="listitem" tabindex="0" aria-label="סמים — שימוש בחומרים פסיכואקטיביים" data-grid-item-index="5">
+      <article class="addict-card addict-card--gold" role="listitem" tabindex="0" aria-label="סמים — שימוש בחומרים פסיכואקטיביים" data-grid-item-index="5" style="text-align: center;">
         <div class="addict-card__glow" aria-hidden="true"></div>
-        <div class="addict-card__icon-wrap" aria-hidden="true">
+        <div class="addict-card__icon-wrap" aria-hidden="true" >
           <span class="addict-card__icon" >&nbsp; 💊</span>
         </div>
         <h3 class="addict-card__title" >&nbsp; סמים</h3>
@@ -1381,9 +1381,9 @@ function switchLang(lang) {
       </article>
 
       <!-- 7: אכילה רגשית -->
-      <article class="addict-card addict-card--cyan addict-card--center" role="listitem" tabindex="0" aria-label="אכילה רגשית — אכילה כתגובה לרגש ולא לרעב" data-grid-item-index="6">
+      <article class="addict-card addict-card--cyan addict-card--center" role="listitem" tabindex="0" aria-label="אכילה רגשית — אכילה כתגובה לרגש ולא לרעב" data-grid-item-index="6" style="text-align: center;">
         <div class="addict-card__glow" aria-hidden="true"></div>
-        <div class="addict-card__icon-wrap" aria-hidden="true">
+        <div class="addict-card__icon-wrap" aria-hidden="true" >
           <span class="addict-card__icon" >&nbsp; 🍫</span>
         </div>
         <h3 class="addict-card__title" >&nbsp; אכילה רגשית</h3>
@@ -1395,8 +1395,8 @@ function switchLang(lang) {
 
     <!-- Footer CTA -->
     <div class="addict-cta">
-      <p class="addict-cta__text" >&nbsp; כל תמכרות היא שפה של כאב פנימי — יחד נלמד לדבר אחרת</p>
-      <p><a href="#contact" class="addict-cta__btn" aria-label="צרו קשר לשיחת היכרות" data-element-type="button" data-element-id="btn-1775241224588-ai1mf7uvt" data-native-element="true" style="outline: none;">&nbsp; &nbsp;צרו קשר לשיחת היכרות</a>
+      <p class="addict-cta__text" style="text-align: center;">&nbsp; כל תמכרות היא שפה של כאב פנימי — יחד נלמד לדבר אחרת</p>
+      <p style="outline: none; text-align: center;"><a href="#contact" class="addict-cta__btn" aria-label="צרו קשר לשיחת היכרות" data-element-type="button" data-element-id="btn-1775241224588-ai1mf7uvt" data-native-element="true" style="outline: none;">&nbsp; &nbsp;צרו קשר לשיחת היכרות</a>
     </p></div>
   </div>
 </section>
