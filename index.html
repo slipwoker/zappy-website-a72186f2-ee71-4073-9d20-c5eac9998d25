@@ -1845,7 +1845,53 @@ function switchLang(lang) {
     <i class="fab fa-whatsapp"></i>
   </a>
   
-  <div data-integration="accessibility:toolbar"></div>
+  <script>
+(function() {
+  function initFaqPsych() {
+    var items = document.querySelectorAll('.faq-psych-item');
+    items.forEach(function(item) {
+      var btn = item.querySelector('.faq-psych-question');
+      var answer = item.querySelector('.faq-psych-answer');
+      if (!btn || !answer) return;
+      answer.style.maxHeight = '0';
+      answer.style.overflow = 'hidden';
+      answer.style.transition = 'max-height 0.35s ease, padding 0.25s ease';
+      answer.style.paddingTop = '0';
+      answer.style.paddingBottom = '0';
+      btn.setAttribute('aria-expanded', 'false');
+      btn.addEventListener('click', function() {
+        var isOpen = item.classList.contains('active');
+        // close all
+        items.forEach(function(i) {
+          i.classList.remove('active');
+          var a = i.querySelector('.faq-psych-answer');
+          var b = i.querySelector('.faq-psych-question');
+          var ch = i.querySelector('.faq-psych-chevron svg');
+          if (a) { a.style.maxHeight = '0'; a.style.paddingTop = '0'; a.style.paddingBottom = '0'; }
+          if (b) b.setAttribute('aria-expanded', 'false');
+          if (ch) ch.style.transform = 'rotate(0deg)';
+        });
+        if (!isOpen) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          answer.style.paddingTop = '12px';
+          answer.style.paddingBottom = '16px';
+          btn.setAttribute('aria-expanded', 'true');
+          var chevron = item.querySelector('.faq-psych-chevron svg');
+          if (chevron) chevron.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFaqPsych);
+  } else {
+    initFaqPsych();
+  }
+})();
+</script>
+
+    <div data-integration="accessibility:toolbar"></div>
 
     <script src="/script.js"></script>
 
