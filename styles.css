@@ -9026,6 +9026,53 @@ body.accessibility-widget-visible ._access-menu {
   padding-top: 8px;
 }
 
+.index-testimonials-section .faq-psych-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.25s ease;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.index-testimonials-section .faq-psych-item.active .faq-psych-answer {
+  max-height: 600px;
+  opacity: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.index-testimonials-section .faq-psych-answer-inner {
+  padding: 0 20px 16px 20px;
+  font-size: 0.97rem;
+  line-height: 1.75;
+  color: var(--text-dark);
+}
+
+.index-testimonials-section .faq-psych-question {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.index-testimonials-section .faq-psych-chevron {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.index-testimonials-section .faq-psych-item.active .faq-psych-chevron {
+  transform: rotate(180deg);
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
