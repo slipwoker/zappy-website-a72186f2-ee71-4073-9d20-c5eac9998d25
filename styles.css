@@ -9073,6 +9073,37 @@ body.accessibility-widget-visible ._access-menu {
   transform: rotate(180deg);
 }
 
+.index-testimonials-section .faq-psych-item .faq-psych-answer {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  padding: 0 24px !important;
+  transition: max-height 0.38s ease, opacity 0.28s ease, padding 0.28s ease !important;
+}
+
+.index-testimonials-section .faq-psych-item.active .faq-psych-answer {
+  max-height: 600px !important;
+  opacity: 1 !important;
+  padding-top: 0 !important;
+  padding-bottom: 22px !important;
+}
+
+.index-testimonials-section .faq-psych-item.active .faq-psych-chevron {
+  transform: rotate(180deg) !important;
+}
+
+.index-testimonials-section .faq-item .faq-answer {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  transition: max-height 0.35s ease, opacity 0.25s ease !important;
+}
+
+.index-testimonials-section .faq-item.active .faq-answer {
+  max-height: 600px !important;
+  opacity: 1 !important;
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
