@@ -9104,6 +9104,109 @@ body.accessibility-widget-visible ._access-menu {
   opacity: 1 !important;
 }
 
+.faq-psych-section .faq-psych-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 0;
+  overflow: visible;
+}
+
+.faq-psych-section .faq-psych-question {
+  border-left: 1px solid rgba(0, 212, 255, 0.18);
+  height: 100%;
+  align-items: flex-start;
+  padding-top: 22px;
+  pointer-events: none;
+  cursor: default;
+}
+
+.faq-psych-section .faq-psych-chevron {
+  display: none !important;
+}
+
+.faq-psych-section .faq-psych-answer {
+  max-height: none !important;
+  overflow: visible !important;
+  opacity: 1 !important;
+  padding: 22px 20px 22px 24px !important;
+  display: block !important;
+}
+
+.faq-psych-section .faq-psych-item.active .faq-psych-answer {
+  max-height: none !important;
+  padding: 22px 20px 22px 24px !important;
+}
+
+@media (max-width: 768px) {
+.faq-psych-section .faq-psych-item {
+  grid-template-columns: 1fr;
+}
+
+.faq-psych-section .faq-psych-question {
+  border-left: none;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.18);
+  pointer-events: none;
+}
+
+.faq-psych-section .faq-psych-answer {
+  padding: 16px 18px !important;
+}
+}
+
+.faq-psych-section .faq-psych-item {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  align-items: start !important;
+  overflow: visible !important;
+}
+
+.faq-psych-section .faq-psych-question {
+  border-left: 1px solid rgba(0, 212, 255, 0.18) !important;
+  align-items: flex-start !important;
+  padding-top: 22px !important;
+  pointer-events: none !important;
+  cursor: default !important;
+  height: 100% !important;
+}
+
+.faq-psych-section .faq-psych-chevron {
+  display: none !important;
+}
+
+.faq-psych-section .faq-psych-answer {
+  max-height: 1000px !important;
+  height: auto !important;
+  overflow: visible !important;
+  opacity: 1 !important;
+  padding: 22px 20px 22px 24px !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.faq-psych-section .faq-psych-item .faq-psych-answer,
+.faq-psych-section .faq-psych-item.active .faq-psych-answer {
+  max-height: 1000px !important;
+  opacity: 1 !important;
+  padding: 22px 20px 22px 24px !important;
+  overflow: visible !important;
+}
+
+@media (max-width: 768px) {
+.faq-psych-section .faq-psych-item {
+  grid-template-columns: 1fr !important;
+}
+
+.faq-psych-section .faq-psych-question {
+  border-left: none !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.18) !important;
+}
+
+.faq-psych-section .faq-psych-answer {
+  padding: 16px 18px !important;
+}
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
