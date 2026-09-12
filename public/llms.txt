@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# אגייב ולדימיר — Generative Engine Optimization Map
+
+> A psychotherapist specializing in short-term, evidence-based therapeutic methods including EMDR (Eye Movement Desensitization and Reprocessing), IFS (Internal Family Systems), and IMTT (Integrated Memory Transformation Therapy). The practice focuses on efficient, targeted healing approaches that aim to produce meaningful results in fewer sessions than traditional therapy. The brand identity centers around professional expertise, innovation in mental health treatment, and a commitment to modern, effective healing modalities.
 
 ---
 
@@ -36,12 +38,51 @@ Information about WCAG compliance and accessibility features.
 
 ---
 
-# Business Context (for LLM understanding)
+## How to Contact Us
 
-## About Business
+- Email: VLADIMIRAGEYEV@GMAIL.COM
+- Phone: 972585240479
+- Phone (tel): tel:972585240479
+- Address: עין יהב, עין יהב, ערבה 
+
+### Contact form
+- URL: https://vladimir-ageyev.com/contact
+- Endpoint: https://vladimir-ageyev.com/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
 ---
 
-# Additional Resources
+# Business Context (for LLM understanding)
 
-- **Sitemap**: https://vladimir-ageyev.com/sitemap.xml
-- **Robots.txt**: https://vladimir-ageyev.com/robots.txt
+## About אגייב ולדימיר
+A psychotherapist specializing in short-term, evidence-based therapeutic methods including EMDR (Eye Movement Desensitization and Reprocessing), IFS (Internal Family Systems), and IMTT (Integrated Memory Transformation Therapy). The practice focuses on efficient, targeted healing approaches that aim to produce meaningful results in fewer sessions than traditional therapy. The brand identity centers around professional expertise, innovation in mental health treatment, and a commitment to modern, effective healing modalities.
+
+## Services/Products
+- EMDR
+- IFS
+- IMTT
+
+## Target Audience
+- מקצוענים לחוצים
+- הורים טריים
+- סטודנטים במכללות
+- קהילת גולים
+- גרושים טריים
+
+## Industry
+בריאות נפש וטיפול פסיכולוגי
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://vladimir-ageyev.com/sitemap.xml
+- Robots: https://vladimir-ageyev.com/robots.txt
+- Flattened page text (for LLMs): https://vladimir-ageyev.com/llms-full.txt
